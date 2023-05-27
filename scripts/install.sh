@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-PROJECT="tftools"
+PROJECT="bucketscan"
 
 set -eu
 declare -a commands=("curl" "jq" "tar")

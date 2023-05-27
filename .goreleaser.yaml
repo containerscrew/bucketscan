@@ -7,22 +7,22 @@ builds:
       - CGO_ENABLED=0
     mod_timestamp: '{{ .CommitTimestamp }}'
     ldflags:
-      - -s -w -X github.com/containerscrew/tftools/cmd.version={{ .Tag }}
+      - -s -w -X github.com/containerscrew/bucketscan/cmd.version={{ .Tag }}
     goos:
       - linux
       - darwin
     goarch:
       - amd64
       - arm64
-    binary: 'tftools'
+    binary: 'bucketscan'
 archives:
   - format: tar.gz
     name_template: '{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}'
 nfpms:
-  - id: tftools
-    package_name: tftools
+  - id: bucketscan
+    package_name: bucketscan
     file_name_template: '{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}'
-    homepage: https://github.com/containerscrew/tftools
+    homepage: https://github.com/containerscrew/bucketscan
     vendor: Containerscrew
     description: Easy CLI with useful terraform/terragrunt tools
     maintainer: Containerscrew <info@containerscrew.com>
@@ -66,10 +66,10 @@ brews:
   - # GitHub repository to push the formula
     tap:
       owner: containerscrew
-      name: tftools
-    name: tftools
-    url_template: "https://github.com/containerscrew/tftools/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
-    homepage: https://github.com/containerscrew/tftools
+      name: bucketscan
+    name: bucketscan
+    url_template: "https://github.com/containerscrew/bucketscan/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    homepage: https://github.com/containerscrew/bucketscan
     commit_author:
       name: goreleaserbot
       email: bot@goreleaser.com
