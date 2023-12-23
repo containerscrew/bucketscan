@@ -24,7 +24,7 @@ func ParseArgs() Arguments {
 	arguments.Workers = parser.Int("w", "workers", &argparse.Options{Required: false, Help: "Number of workers (threads)", Default: 5})
 	arguments.Keywords = parser.StringList("k", "keyword", &argparse.Options{Required: true, Help: "Keyword for url mutations"})
 	arguments.QuickScan = parser.Flag("q", "quick-scan", &argparse.Options{Required: false, Default: false, Help: "Quick scan, do not create mutations from fuzz.txt file"})
-	arguments.DictionaryPath = parser.String("d", "dictionary", &argparse.Options{Required: true, Help: "Dictionary path"})
+	arguments.DictionaryPath = parser.String("d", "dictionary", &argparse.Options{Required: false, Help: "Dictionary path"})
 	arguments.Nameserver = parser.String("n", "nameserver", &argparse.Options{Required: false, Help: "Custom nameserver", Default: "8.8.8.8 "})
 	arguments.LogLevel = parser.Selector("l", "log-level", []string{"info", "debug"}, &argparse.Options{Required: false, Default: "info", Help: "Log level of the application"})
 	err := parser.Parse(os.Args)

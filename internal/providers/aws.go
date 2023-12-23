@@ -18,7 +18,7 @@ func AWSMutations(keywords []string, quickScan bool, logger *slog.Logger, dictio
 	}
 
 	// If quickScan not selected, then create mutatiosn using your keywords and fuzz.txt file or your custom dictionary
-	words := utils.ReadFuzzFile(logger, dictionaryPath)
+	words := utils.ReadDictionaryFile(logger, dictionaryPath)
 
 	for _, word := range words {
 		for _, keyword := range keywords {

@@ -5,7 +5,6 @@ import (
 	"net/http"
 )
 
-// Dispatcher
 func Dispatcher(reqChan chan *http.Request, mutations []string) {
 	//ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
 	//defer cancel()

@@ -24,6 +24,7 @@
 - [TO DO](#to-do)
 - [Contribution](#contribution)
 - [LICENSE](#license)
+- [TO DO](#to-do-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -69,3 +70,7 @@ Pull requests are welcome! Any code refactoring, improvement, implementation.
 # LICENSE
 
 [LICENSE](./LICENSE)
+
+# TO DO
+
+* counter 80urls scanner / 1024 ...

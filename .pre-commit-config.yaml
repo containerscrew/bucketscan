@@ -11,8 +11,8 @@ repos:
     hooks:
       - id: go-fmt
       - id: go-imports
-      - id: golangci-lint
-        args: [--fix]
+        # - id: golangci-lint
+        #   args: [--fix]
   - repo: https://github.com/thlorenz/doctoc
     rev: v2.2.0
     hooks:

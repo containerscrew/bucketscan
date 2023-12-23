@@ -8,7 +8,7 @@ import (
 	"golang.org/x/exp/slog"
 )
 
-func ReadFuzzFile(logger *slog.Logger, dictionaryPath string) []string {
+func ReadDictionaryFile(logger *slog.Logger, dictionaryPath string) []string {
 	var words []string
 	readFile, err := os.Open(dictionaryPath)
 
