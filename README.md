@@ -20,6 +20,9 @@
 - [BUCKETSCAN](#bucketscan)
 - [THIS APP AND README IS STILL IN PROGRESS](#this-app-and-readme-is-still-in-progress)
 - [Local usage](#local-usage)
+  - [Others commands](#others-commands)
+  - [Use your own dictionary](#use-your-own-dictionary)
+  - [Keywords is what matters](#keywords-is-what-matters)
 - [Contribution](#contribution)
 - [LICENSE](#license)
 
@@ -55,6 +58,27 @@ git clone https://github.com/containerscrew/bucketscan.git
 cd bucketscan/
 go run main.go -k containerscrew -d assets/fuzz.txt
 ```
+
+## Others commands
+
+```shell
+$ go run main.go -k containerscrew -q # quick scan only matching https://KEYWORD.s3.X.X.X.X
+$ go run main.go -k containerscrew -d assets/fuzz.txt -w 5 # limit number of concurrent workers (goroutines)
+$ go run main.go -k keyword1 -k keyaord2 -d assets/fuzz.txt # user multiple keywords
+```
+
+## Use your own dictionary
+
+Download your custom dictionary list, for example from [this repo](https://github.com/danielmiessler/SecLists) and use it with `-d` flag.
+
+## Keywords is what matters
+
+The program will create mutations using the keyword(s) you provide and the words inside dictionary. So if you are trying to find buckets with the keyword `containerscrew` (**https://containerscrew.s3.amazonaws.com**), use it in the command line:
+
+```shell
+$ go run main.go -k containerscrew -d assets/fuzz.txt
+```
+
 
 # Contribution
 
