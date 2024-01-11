@@ -94,13 +94,13 @@ esac
 OS=$(echo "$OS" | tr '[:upper:]' '[:lower:]')
 
 download_release() {
-  TFTOOLS_LATEST_VERSION=$(curl -s https://api.github.com/repos/containerscrew/$PROJECT/releases/latest | jq -r ".name")
+  BUCKETSCAN_LATEST_VERSION=$(curl -s https://api.github.com/repos/containerscrew/$PROJECT/releases/latest | jq -r ".name")
   INSTALLATION_PATH="/usr/local/bin/"
   tmpdir=$(mktemp -d)
 
   cd $tmpdir
-  echo -e "Downloading... ${TFTOOLS_LATEST_VERSION}/${PROJECT}-${OS}-${cli_arch}.tar.gz \n"
-  curl -L --fail --remote-name-all https://github.com/containerscrew/${PROJECT}/releases/download/"${TFTOOLS_LATEST_VERSION}"/${PROJECT}-"${OS}"-"${cli_arch}".tar.gz
+  echo -e "Downloading... ${BUCKETSCAN_LATEST_VERSION}/${PROJECT}-${OS}-${cli_arch}.tar.gz \n"
+  curl -L --fail --remote-name-all https://github.com/containerscrew/${PROJECT}/releases/download/"${BUCKETSCAN_LATEST_VERSION}"/${PROJECT}-"${OS}"-"${cli_arch}".tar.gz
   tar -xzf ${PROJECT}-"${OS}"-"${cli_arch}".tar.gz ${PROJECT}
 }
 

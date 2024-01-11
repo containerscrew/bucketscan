@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	_mutations, awsEndpoints, gcpEndpoints, azureEndpoints []string
+	mutations, awsEndpoints, gcpEndpoints, azureEndpoints []string
 )
 
 type Mutations struct {
