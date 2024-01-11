@@ -62,9 +62,9 @@ go run main.go -k containerscrew -d assets/fuzz.txt
 ## Others commands
 
 ```shell
-$ go run main.go -k containerscrew -q # quick scan only matching https://KEYWORD.s3.X.X.X.X
+$ go run main.go -k containerscrew -q # quick scan only matching https://KEYWORD.s3.amazonaws.com
 $ go run main.go -k containerscrew -d assets/fuzz.txt -w 5 # limit number of concurrent workers (goroutines)
-$ go run main.go -k keyword1 -k keyaord2 -d assets/fuzz.txt # user multiple keywords
+$ go run main.go -k keyword1 -k keyword2 -d assets/fuzz.txt # user multiple keywords
 ```
 
 ## Use your own dictionary
