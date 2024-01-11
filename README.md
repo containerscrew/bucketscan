@@ -1,3 +1,16 @@
+<p align="center" >
+  <img src="assets/logo.png" alt="logo" width="250"/>
+<h3 align="center">bucketscan</h3>
+<p align="center">Bucket scanner</p>
+<p align="center">Build with ❤ in Golang</p>
+</p>
+
+<p align="center" >
+  <img alt="Go report card" src="https://goreportcard.com/badge/github.com/containerscrew/bucketscan">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/containerscrew/bucketscan">
+  <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/containerscrew/bucketscan">
+</p>
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
