@@ -69,7 +69,7 @@ $ go run main.go -k keyword1 -k keyword2 -d assets/fuzz.txt # user multiple keyw
 
 ## Use your own dictionary
 
-Download your custom dictionary list, for example from [this repo](https://github.com/danielmiessler/SecLists) and use it with `-d` flag.
+Download your custom dictionary list, for example, from [this repo](https://github.com/danielmiessler/SecLists) and use it with `-d` flag.
 
 ## Keywords is what matters
 
